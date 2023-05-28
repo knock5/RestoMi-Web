@@ -1,0 +1,118 @@
+.hitext {
+    color: var(--light);
+  }
+  
+  .navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-bottom: 5px solid var(--green);
+    box-shadow: 0px 0px 12px 1px var(--primary);
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    list-style: none;
+  }
+  
+  .nav-logo {
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 12px;
+    color: var(--secondary);
+  }
+  
+  .nav-menu {
+    display: flex;
+    padding: 12px;
+    gap: 12px;
+  }
+  
+  .nav-link {
+    transition: 0.7s ease;
+    padding: 12px;
+    text-decoration: none;
+    background-color: var(--secondary);
+    color: var(--green);
+    border-radius: 7px;
+  }
+  
+  .nav-link:hover {
+    background-color: var(--light);
+    color: var(--green);
+  }
+  
+  .hamburger {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3 ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--secondary);
+  }
+  
+  
+  
+  @media screen and (max-width: 768px) {
+    .hamburger {
+      display: block;
+    }
+  
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+  
+    .nav-menu {
+      background-color: var(--primary);
+      position: fixed;
+      left: -105%;
+      top: 52px;
+      gap: 0;
+      flex-direction: column;
+      width: 100%;
+      transition: 0.3s;
+      text-align: center;
+    }
+  
+    .nav-logo {
+      font-size: 1.7rem;
+    }
+  
+    .nav-link {
+      padding: 12px;
+      font-size: 0.8rem;
+      background-color: rgb(63, 73, 127, 0.1);
+      color: var(--secondary);
+    }
+    
+    .nav-item {
+      margin: 3px 12px;
+      padding: 8px;
+      border-bottom: 1px solid var(--secondary);
+    }
+  
+    .nav-menu.active {
+      left: 0;
+    }
+  
+  
+  }
