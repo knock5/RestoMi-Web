@@ -3,11 +3,11 @@
   }
   
   .navbar-wrap {
-    border-bottom: 5px solid var(--secondary);
+    border-bottom: 5px solid var(--green);
     box-shadow: 0px 0px 12px 1px var(--primary);
     position: fixed;
     width: 100%;
-    z-index: 50;
+    z-index: 60;
     top: 0;
   }
 
