@@ -28,7 +28,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)/,
         type: 'asset/public/images/heros',
-      },
+      }
     ],
   },
   plugins: [

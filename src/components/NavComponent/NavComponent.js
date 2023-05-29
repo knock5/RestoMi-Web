@@ -28,8 +28,8 @@ class NavBar extends HTMLElement {
         </nav>
         `;
 
-        const hamburgerElement = document.getElementsByClassName('humburger');
-        const navMenu = document.getElementsByClassName('nav-menu');
+        const hamburgerElement = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
 
         hamburgerElement.addEventListener('click', () => {
             hamburgerElement.classList.toggle('active');

@@ -1,0 +1,13 @@
+@import url('../../styles/global.css');
+
+.wrap-footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 5px;
+}
+
+.foot {
+    font-size: 1.2rem;
+}
