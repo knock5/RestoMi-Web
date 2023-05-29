@@ -19,7 +19,7 @@
   .btn-hero {
     background-color: var(--green);
     color: var(--primary);
-    padding: 12px;
+    padding: 14px;
     border-radius: 7px;
   }
 
@@ -108,8 +108,7 @@
   }
 
   .btn-hero {
-    padding: 10px;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .img-hero {
