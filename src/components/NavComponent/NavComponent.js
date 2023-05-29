@@ -8,23 +8,24 @@ class NavBar extends HTMLElement {
         <nav class="navbar">
             <a href="#" class="nav-logo">Resto<span class="hitext">Mi</span></a>
 
+            <button class="hamburger" aria-label="Expand Navigation Button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
             <ul class="nav-menu" id="drawer">
                 <li class="nav-item">
-                <a href="./index.html" class="nav-link">Home</a>
+                    <a href="./index.html" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                <a href="#" class="nav-link">Favorite</a>
+                    <a href="#" class="nav-link">Favorite</a>
                 </li>
                 <li class="nav-item">
-                <a href="https://www.instagram.com/miftachulhd/" target="_blank" class="nav-link">About Us</a>
+                    <a href="https://www.instagram.com/miftachulhd/" target="_blank" class="nav-link">About Us</a>
                 </li>
             </ul>
 
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
         </nav>
         `;
 
