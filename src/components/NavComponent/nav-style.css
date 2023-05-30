@@ -87,10 +87,10 @@
       opacity: 0;
     }
     .hamburger.active .bar:nth-child(1) {
-      transform: translateY(8px) rotate(45deg);
+      transform: translateY(10px) rotate(45deg);
     }
     .hamburger.active .bar:nth-child(3) {
-      transform: translateY(-8px) rotate(-45deg);
+      transform: translateY(-10px) rotate(-45deg);
     }
   
     .nav-menu {
@@ -110,15 +110,15 @@
     }
   
     .nav-link {
-      padding: 12px;
+      padding: 16px;
       font-size: 0.8rem;
       background-color: rgb(42, 50, 96, 0.1);
       color: var(--secondary);
     }
     
     .nav-item {
-      margin: 3px 0;
-      padding: 8px;
+      margin: 7px 0;
+      padding: 10px 0;
       border-bottom: 1px solid var(--secondary);
     }
   
