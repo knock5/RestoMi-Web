@@ -1,6 +1,6 @@
 class HeroContent extends HTMLElement {
   connectedCallback() {
-      this.render();
+    this.render();
   }
 
   render() {
@@ -16,10 +16,15 @@ class HeroContent extends HTMLElement {
 
       <div class="title-section" id="main-content">
           <h2>Explore Restaurant</h2>
+          <div class="wrap-card" id="resto">
+          </div>
       </div>
     `;
   }
 
+  async afterRender() {
+
+  }
 }
 
 customElements.define('hero-content', HeroContent);
