@@ -1,6 +1,7 @@
 import UrlParser from '../../routes/url-parser';
 import RestoDbSource from '../../data/restodb-source';
 import CONFIG from '../../globals/config';
+import createLikeButtonTemplate from '../../components/FavoriteButton/FavButtonCreator';
 
 const restoDetailPage = {
   async render() {
@@ -9,6 +10,7 @@ const restoDetailPage = {
         <h1>Detail Restaurant</h1>
       </div>
       <div id="restoDetail" class="wrap-resto-detail"></div>
+      <div id="likeButtonContainer"></div>
     `;
   },
 
@@ -16,8 +18,8 @@ const restoDetailPage = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const resto = await RestoDbSource.detailRestaurant(url.id);
     const restoContainer = document.querySelector('#restoDetail');
-    const menus = resto.menus.foods;
-    console.log(menus);
+    const likeButtonContainer = document.querySelector('#likeButtonContainer');
+    likeButtonContainer.innerHTML = await createLikeButtonTemplate();
     restoContainer.innerHTML = `
       <div class="d-content">
         <div class="d-img">
@@ -25,36 +27,46 @@ const restoDetailPage = {
         </div>
         
         <div class="d-info">
-          <table>
-            <tr>
-              <td>Name</td>
-              <td>:</td>
-              <td>${resto.name}</td>
+          <table class="table-detail">
+            <tr class="d-row">
+              <td class="d-data">Name</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.name}</td>
             </tr>
-            <tr>
-              <td>City</td>
-              <td>:</td>
-              <td>${resto.city}</td>
+            <tr class="d-row">
+              <td class="d-data">City</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.city}</td>
             </tr>
-            <tr>
-              <td>Address</td>
-              <td>:</td>
-              <td>${resto.address}</td>
+            <tr class="d-row">
+              <td class="d-data">Address</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.address}</td>
             </tr>
-            <tr>
-              <td>Rating</td>
-              <td>:</td>
-              <td>${resto.rating}</td>
+            <tr class="d-row">
+              <td class="d-data">Rating</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.rating}</td>
             </tr>
-            <tr>
-              <td>Description</td>
-              <td>:</td>
-              <td>${resto.description}</td>
+            <tr class="d-row">
+              <td class="d-data">Description</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.description}</td>
             </tr>   
-            <tr>
-              <td>Makanan</td>
-              <td>:</td>
-              <td>${menus.foods}</td>
+            <tr class="d-row">
+              <td class="d-data">Foods</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.menus.foods}</td>
+            </tr>
+            <tr class="d-row">
+              <td class="d-data">Drinks</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.menus.drinks}</td>
+            </tr>
+            <tr class="d-row">
+              <td class="d-data">Reviews</td>
+              <td class="d-data">:</td>
+              <td class="d-data">${resto.customerReviews}</td>
             </tr>
           </table>
         </div>

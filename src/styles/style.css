@@ -128,6 +128,39 @@
     align-items: center;
 }
 
+.table-detail {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-top: 50px;
+}
+
+.d-data {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/*
+  Like
+*/
+.like {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00b44a;
+
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    border-radius: 50%;
+    border: 0;
+
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+}
+
 
 @media screen and (max-width: 1080px){
     .dt-img {
