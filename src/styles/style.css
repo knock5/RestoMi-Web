@@ -113,6 +113,36 @@
 /*
  Detail Page
 */
+.wt-detail {
+    text-align: center;
+    margin-top: 120px;
+}
+
+.wrap-resto-detail {
+    padding: 10px;
+}
+
+.d-content {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.d-img {
+    display: flex;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 1080px){
+    .dt-img {
+        width: 100%;
+    }
+
+    .d-content {
+        flex-direction: column;
+    }
+}
 
 @media screen and (max-width: 768px) {
     .jumbotron {
