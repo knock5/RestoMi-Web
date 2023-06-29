@@ -1,7 +1,13 @@
 const restoFavorite = {
   async render() {
     return `
-      <h1>Detail Restaurant</h1>
+      <div class="fav-resto">
+        <h1>Favorite Restaurant</h1>
+        <h1>Favorite Restaurant</h1>
+        <h1>Favorite Restaurant</h1>
+        <h1>Favorite Restaurant</h1>
+      </div>
+      
       <div id="restoFav"></div>
     `;
   },

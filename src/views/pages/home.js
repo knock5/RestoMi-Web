@@ -30,7 +30,7 @@ const restoListsPage = {
             <span class="card-city">${resto.city}</span>
             <img src="${CONFIG.BASE_IMAGE_URL_SMALL + resto.pictureId}" alt="image ${resto.name} restaurant" class="card-image">
             <div class="card-title">
-                <a href="#/detail" class="card-link-detail">${resto.name}</a>
+                <a href="/#/detail/${resto.id}" class="card-link-detail">${resto.name}</a>
             </div>
         </div>
       `;

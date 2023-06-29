@@ -9,6 +9,7 @@ class RestoDbSource {
 
   static async detailRestaurant(id) {
     const response = await fetch(API_ENDPOINTS.DETAIL(id));
+    console.log(response.restaurants);
     return response.json();
   }
 }

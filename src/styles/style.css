@@ -1,5 +1,8 @@
 @import url(./global.css);
 
+/*
+ Home Page
+*/
 .jumbotron {
     display: flex;
     align-items: center;
@@ -106,6 +109,10 @@
 .card-link-detail {
     color: var(--secondary);
 }
+
+/*
+ Detail Page
+*/
 
 @media screen and (max-width: 768px) {
     .jumbotron {
