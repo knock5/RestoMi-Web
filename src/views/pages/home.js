@@ -15,11 +15,8 @@ const restoListsPage = {
 
     <div class="title-section" id="resto-content">
         <h2>Explore Restaurant</h2>
-        <div class="wrap-card" id="resto">
-        </div>
+        <div class="wrap-card" id="resto"></div>
     </div>
-      
-    <div class="wrap-card" id="resto"></div>  
     `;
   },
 
