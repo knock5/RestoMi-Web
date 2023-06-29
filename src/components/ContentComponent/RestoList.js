@@ -6,8 +6,8 @@ class RestoList extends HTMLElement {
     this.render();
   }
 
-  render() {
-    const resultList = RestodbSource.listAllRestaurants();
+  async render() {
+    const resultList = await RestodbSource.listAllRestaurants();
     this.innerHTML = '';
 
     resultList.forEach((res) => {

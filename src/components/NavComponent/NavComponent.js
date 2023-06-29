@@ -16,10 +16,10 @@ class NavBar extends HTMLElement {
 
         <ul class="nav-menu" id="drawer">
             <li class="nav-item">
-                <a href="./index.html" class="nav-link">Home</a>
+                <a href="#/home" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Favorite</a>
+                <a href="#/favorite" class="nav-link">Favorite</a>
             </li>
             <li class="nav-item">
                 <a href="https://www.instagram.com/miftachulhd/" target="_blank" class="nav-link">About Us</a>

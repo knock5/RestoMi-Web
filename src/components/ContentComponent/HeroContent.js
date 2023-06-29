@@ -21,10 +21,6 @@ class HeroContent extends HTMLElement {
       </div>
     `;
   }
-
-  async afterRender() {
-
-  }
 }
 
 customElements.define('hero-content', HeroContent);
