@@ -17,12 +17,14 @@ const restoListsPage = {
         <h2>Explore Restaurant</h2>
         <div class="wrap-card" id="resto"></div>
     </div>
+    
+    <div class="wrap-card" id="restoList"></div>
     `;
   },
 
   async afterRender() {
     const restoList = await RestodbSource.listAllRestaurants();
-    const restosContainer = document.querySelector('#resto');
+    const restosContainer = document.querySelector('#restoList');
     restoList.forEach((resto) => {
       restosContainer.innerHTML += `
         <div class="card">
