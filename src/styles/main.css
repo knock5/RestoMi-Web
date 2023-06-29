@@ -1,4 +1,4 @@
 @import url('./global.css');
 @import url('../components/NavComponent/nav-style.css');
-@import url('../components/ContentComponent/content.css');
 @import url('../components/FooterComponent/foot-style.css');
+@import url('./style.css');

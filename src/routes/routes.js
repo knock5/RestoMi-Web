@@ -1,5 +1,5 @@
 import restoListsPage from '../views/pages/home';
-import restoFavorite from '../views/pages/detail';
+import restoFavorite from '../views/pages/favorite';
 
 const routes = {
   '/': restoListsPage,

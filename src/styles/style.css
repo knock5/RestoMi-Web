@@ -1,4 +1,4 @@
-@import url(../../styles/global.css);
+@import url(./global.css);
 
 .jumbotron {
     display: flex;
@@ -7,127 +7,136 @@
     max-height: 725px;
     overflow: hidden;
     background-color: var(--primary);
-  }
+}
 
-  .high-hero {
+.high-hero {
     position: absolute;
     text-align: center;
     padding: 24px;
     z-index: 55;
-  }
+}
 
-  .btn-hero {
+.btn-hero {
     background-color: var(--green);
     color: var(--primary);
     padding: 14px;
     border-radius: 7px;
-  }
+}
 
-  .btn-hero:hover {
+.btn-hero:hover {
     background-color: var(--green);
     color: var(--light);
-  }
+}
 
-  .title-hero {
+.title-hero {
     color: var(--secondary);
     font-size: 3rem;
     margin: 0;
-  }
-  
-  .sub-text {
+}
+
+.sub-text {
     color: var(--light);
     margin-bottom: 25px;
-  }
+}
 
-  .img-hero {
+.img-hero {
     width: 100%;
     opacity: 0.3;
-  }
+}
 
-  .title-section {
+.title-section {
     padding: 10px;
     text-align: center;
     border-top: 5px solid var(--green);
     background-color: var(--primary);
     color: var(--secondary);
     transition: 0.3s ease-in-out;
-  }
+}
 
-  .wrap-card {
+.wrap-card {
     display: flex;
     gap: 7px;
     flex-wrap: wrap;
     justify-content: center;
     padding: 24px;
     transition: 0.5s ease-in-out;
-  }
+}
 
-  .card {
+.card {
     max-width: 300px;
     margin: 7px 7px 35px 7px;
     overflow: hidden;
     border-radius: 5px;
     background-color: var(--primary);
     box-shadow: 0 0 7px 1px var(--primary);
-  }
+}
 
-  .card-city {
+.card-city {
     position: absolute;
     background-color: var(--secondary);
     padding: 7px;
     border-radius: 5px 0 0 0;
-  }
+}
 
-  .card-rating {
+.card-rating {
     text-align: center;
     color: var(--secondary);
-    padding: 0 12px;
-  }
+    padding: 5px 12px;
+}
 
-  .card-desc {
+.card-desc {
     color: var(--light);
     text-align: justify;
     font-size: 0.9rem;
     padding: 0 12px;
-  }
+}
 
-  .card-title {
-    color: var(--secondary);
+.card-title {
     font-size: 1.5rem;
-    margin: 0;
-    padding: 0 12px;
-  }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
 
-  .card-image {
-    width: 100%;
-  }
+.card-image {
+    max-height: 220px;
+}
+
+.card-link-detail {
+    color: var(--secondary);
+}
 
 @media screen and (max-width: 768px) {
-  .jumbotron {
-    min-height: 400px;
-  }
+    .jumbotron {
+        min-height: 400px;
+    }
 
-  .btn-hero {
-    font-size: 0.95rem;
-  }
+    .btn-hero {
+        font-size: 0.95rem;
+    }
 
-  .img-hero {
-    width: fit-content;
-  }
+    .img-hero {
+        width: fit-content;
+    }
 
-  .title-hero {
-    font-size: 2.5rem;
-  }
+    .title-hero {
+        font-size: 2.5rem;
+    }
 
-  .sub-text {
-    font-size: 0.9rem;
-  }
+    .sub-text {
+        font-size: 0.9rem;
+    }
 
-  .title-section {
-    font-size: 0.9rem;
-  }
+    .title-section {
+        font-size: 0.9rem;
+    }
 
-  .card-desc {
-    font-size: 0.8rem;
-  }
+    .card-title {
+        font-size: 1rem;
+    }
+
+    .card-desc {
+        font-size: 0.8rem;
+    }
 }

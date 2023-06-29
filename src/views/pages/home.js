@@ -10,12 +10,11 @@ const restoListsPage = {
         <p class="sub-text" tabindex="0">We are open since 2023, all of taste and love include to our products.</p>
         <a href="#resto-content" class="btn-hero">Explore Now</a>
       </div>
-      <img src="../../public/images/heros/hero-image_2.jpg" alt="Hero Image RestoMi" class="img-hero">
+      <img src="./images/heros/hero-image_2.jpg" alt="Hero Image RestoMi" class="img-hero">
     </div>
 
     <div class="title-section" id="resto-content">
         <h2>Explore Restaurant</h2>
-        <div class="wrap-card" id="resto"></div>
     </div>
     
     <div class="wrap-card" id="restoList"></div>
@@ -30,9 +29,9 @@ const restoListsPage = {
         <div class="card">
             <span class="card-city">${resto.city}</span>
             <img src="${CONFIG.BASE_IMAGE_URL_SMALL + resto.pictureId}" alt="image ${resto.name} restaurant" class="card-image">
-            <span class="card-rating">Rating : ${resto.rating}</span>
-            <h4 class="card-title">${resto.name}</h4>
-            <p class="card-desc">${resto.description}</p>
+            <div class="card-title">
+                <a href="#/detail" class="card-link-detail">${resto.name}</a>
+            </div>
         </div>
       `;
     });
