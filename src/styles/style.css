@@ -122,14 +122,9 @@
     padding: 10px;
 }
 
-.d-content {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
 .d-img {
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 

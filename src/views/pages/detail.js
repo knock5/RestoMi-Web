@@ -16,22 +16,47 @@ const restoDetailPage = {
     const url = UrlParser.parseActiveUrlWithoutCombiner();
     const resto = await RestoDbSource.detailRestaurant(url.id);
     const restoContainer = document.querySelector('#restoDetail');
+    const menus = resto.menus.foods;
+    console.log(menus);
     restoContainer.innerHTML = `
       <div class="d-content">
         <div class="d-img">
           <img class="dt-img" src="${CONFIG.BASE_IMAGE_URL_MEDIUM + resto.pictureId}" alt="${resto.name} image">
         </div>
+        
         <div class="d-info">
-          <h4>Name</h4>
-          <p>🏷️ ${resto.name}</p>
-          <h4>City</h4>
-          <p>🏙️ ${resto.city}</p>
-          <h4>Address</h4>
-          <p>🏠 ${resto.address}</p>
-          <h4>Rating</h4>
-          <p>⭐ ${resto.rating}</p>
-          <h4>Description</h4>
-          <p>${resto.description}</p>
+          <table>
+            <tr>
+              <td>Name</td>
+              <td>:</td>
+              <td>${resto.name}</td>
+            </tr>
+            <tr>
+              <td>City</td>
+              <td>:</td>
+              <td>${resto.city}</td>
+            </tr>
+            <tr>
+              <td>Address</td>
+              <td>:</td>
+              <td>${resto.address}</td>
+            </tr>
+            <tr>
+              <td>Rating</td>
+              <td>:</td>
+              <td>${resto.rating}</td>
+            </tr>
+            <tr>
+              <td>Description</td>
+              <td>:</td>
+              <td>${resto.description}</td>
+            </tr>   
+            <tr>
+              <td>Makanan</td>
+              <td>:</td>
+              <td>${menus.foods}</td>
+            </tr>
+          </table>
         </div>
       </div>
     `;
