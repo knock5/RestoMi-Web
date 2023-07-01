@@ -19,7 +19,8 @@ const restoDetailPage = {
     const resto = await RestoDbSource.detailRestaurant(url.id);
     const restoContainer = document.querySelector('#restoDetail');
     restoContainer.innerHTML = createRestoDetailTemplate(resto);
-
+    const resMakanan = resto.menus.foods;
+    console.log(resMakanan);
     await LikeButtonInitiator.init({
       likeButtonContainer: document.querySelector('#likeButtonContainer'),
       resto: {
