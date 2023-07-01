@@ -140,6 +140,15 @@
 }
 
 /*
+  Favorite Page
+*/
+.fav-resto {
+    margin-top: 100px;
+    text-align: center;
+}
+
+
+/*
   Like
 */
 .like {

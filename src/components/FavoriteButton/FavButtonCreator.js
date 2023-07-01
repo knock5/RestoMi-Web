@@ -7,7 +7,7 @@ const createLikeButtonTemplate = () => `
 const createLikedButtonTemplate = () => `
   <button aria-label="unlike this resto" id="likedButton" class="like">
     <i class="fa-solid fa-heart" aria-hidden="true"></i>
-  </button>SS
+  </button>
 `;
 
-export default { createLikeButtonTemplate, createLikedButtonTemplate };
+export { createLikeButtonTemplate, createLikedButtonTemplate };

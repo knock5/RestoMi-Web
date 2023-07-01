@@ -1,5 +1,5 @@
 import RestodbSource from '../../data/restodb-source';
-import CONFIG from '../../globals/config';
+import { createRestoItemTemplate } from '../contents/template-creator';
 
 const restoListsPage = {
   async render() {
@@ -25,15 +25,7 @@ const restoListsPage = {
     const restoList = await RestodbSource.listAllRestaurants();
     const restosContainer = document.querySelector('#restoList');
     restoList.forEach((resto) => {
-      restosContainer.innerHTML += `
-        <div class="card">
-            <span class="card-city">${resto.city}</span>
-            <img src="${CONFIG.BASE_IMAGE_URL_SMALL + resto.pictureId}" alt="image ${resto.name} restaurant" class="card-image">
-            <div class="card-title">
-                <a href="/#/detail/${resto.id}" class="card-link-detail">${resto.name}</a>
-            </div>
-        </div>
-      `;
+      restosContainer.innerHTML += createRestoItemTemplate(resto);
     });
   },
 };
