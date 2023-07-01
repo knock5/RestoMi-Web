@@ -10,7 +10,7 @@ const createRestoItemTemplate = (resto) => `
   </div>
 `;
 
-const createRestoDetailTemplate = (resto) => `
+const createRestoDetailTemplate = (resto) => `  
   <div class="d-content">
     <div class="d-img">
       <img class="dt-img" src="${CONFIG.BASE_IMAGE_URL_MEDIUM + resto.pictureId}" alt="${resto.name} image">

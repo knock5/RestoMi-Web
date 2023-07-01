@@ -170,6 +170,24 @@
     cursor: pointer;
 }
 
+.wrap-footer {
+    display: grid;
+}
+.foot-main {
+    text-align: center;
+}
+.content-foot {
+    display: flex;
+    gap: 20px;
+}
+.foot {
+    font-size: 1rem;
+}
+.link-footer {
+    color: var(--light);
+    text-decoration: underline;
+}
+
 
 @media screen and (max-width: 1080px){
     .dt-img {
@@ -211,6 +229,10 @@
     }
 
     .card-desc {
+        font-size: 0.8rem;
+    }
+
+    .foot {
         font-size: 0.8rem;
     }
 }
