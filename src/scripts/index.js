@@ -15,7 +15,23 @@ window.addEventListener('hashchange', () => {
   app.renderPage();
 });
 
+// Fungsi untuk menampilkan loading
+function showLoading() {
+  document.getElementById('loading').style.display = 'block';
+}
+
+// Fungsi untuk menyembunyikan loading
+function hideLoading() {
+  document.getElementById('loading').style.display = 'none';
+}
+
+// Event listener untuk saat navigasi halaman dimulai
+window.addEventListener('beforeunload', () => {
+  showLoading();
+});
+
 window.addEventListener('load', () => {
   app.renderPage();
   swRegister();
+  hideLoading();
 });

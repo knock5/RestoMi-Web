@@ -46,19 +46,37 @@ const createRestoDetailTemplate = (resto) => `
         <tr class="d-row">
           <td class="d-data">Foods</td>
           <td class="d-data">:</td>
-          <td class="d-data">${resto.menus.foods}</td>
+          <td class="d-data">
+            <ol>
+              ${resto.menus.foods.map((food) => `
+                <li>${food.name}</li>
+              `).join('')}
+            </ol>
+          </td>
         </tr>
         <tr class="d-row">
           <td class="d-data">Drinks</td>
           <td class="d-data">:</td>
-          <td class="d-data">${resto.menus.drinks}</td>
-        </tr>
-        <tr class="d-row">
-          <td class="d-data">Reviews</td>
-          <td class="d-data">:</td>
-          <td class="d-data">${resto.customerReviews}</td>
+          <td class="d-data">
+            <ol>
+              ${resto.menus.drinks.map((drink) => `
+                <li>${drink.name}</li>
+              `).join('')}
+            </ol>
+          </td>
         </tr>
       </table>
+      
+      <h3 class="title-review">Customer Reviews</h3>
+      <div class="wrap-review">
+        ${resto.customerReviews.map((res) => `
+          <div class="card-review">
+            <q>${res.review}</q>
+            <p>${res.name}</p>
+            <p>${res.date}</p>
+          </div>
+        `).join('')}
+      </div>
     </div>
   </div>
 `;
