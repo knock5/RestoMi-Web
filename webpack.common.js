@@ -74,6 +74,18 @@ module.exports = {
       swDest: './sw.bundle.js',
       skipWaiting: true,
       clientsClaim: true,
+      runtimeCaching: [
+        {
+          urlPattern: /^https:\/\/restaurant-api.dicoding.dev\//,
+          handler: 'StaleWhileRevalidate',
+          options: {
+            cacheName: 'restaurant-list-cache-v1',
+            cacheableResponse: {
+              statuses: [0, 200],
+            },
+          },
+        },
+      ],
     }),
     new CleanWebpackPlugin(),
     new ImageminWebpackPlugin({
