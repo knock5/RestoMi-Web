@@ -14,7 +14,7 @@ const restoListsPage = {
         <source media="(max-width: 425px)" srcset="./images/hero-image_2-small.jpg">
         <source media="(max-width: 768px)" srcset="./images/hero-image_2-large.jpg">
         
-        <img src="./images/hero-image_2-large.jpg" alt="Hero Image RestoMi" class="img-hero lazyload">
+        <img data-src="./images/hero-image_2-large.jpg" alt="Hero Image RestoMi" class="img-hero lazyload">
       </picture>
     </div>
 
