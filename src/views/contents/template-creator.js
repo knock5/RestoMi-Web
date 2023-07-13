@@ -3,7 +3,7 @@ import CONFIG from '../../globals/config';
 const createRestoItemTemplate = (resto) => `
   <div class="card">
     <span class="card-city">${resto.city}</span>
-    <img src="${CONFIG.BASE_IMAGE_URL_SMALL + resto.pictureId}" alt="image ${resto.name} restaurant" class="card-image">
+    <img src="${CONFIG.BASE_IMAGE_URL_SMALL + resto.pictureId}" alt="image ${resto.name} restaurant" class="card-image lazyload">
     <div class="card-title">
       <a href="/#/detail/${resto.id}" class="card-link-detail">${resto.name}</a>
     </div>
@@ -13,7 +13,7 @@ const createRestoItemTemplate = (resto) => `
 const createRestoDetailTemplate = (resto) => `  
   <div class="d-content">
     <div class="d-img">
-      <img class="dt-img" src="${CONFIG.BASE_IMAGE_URL_MEDIUM + resto.pictureId}" alt="${resto.name} image">
+      <img class="dt-img lazyload" src="${CONFIG.BASE_IMAGE_URL_MEDIUM + resto.pictureId}" alt="${resto.name} image">
     </div>
     
     <div class="d-info">

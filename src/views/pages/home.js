@@ -10,7 +10,12 @@ const restoListsPage = {
         <p class="sub-text" tabindex="0">We are open since 2023, all of taste and love include to our products.</p>
         <a href="#resto-content" class="btn-hero">Explore Now</a>
       </div>
-      <img src="./images/heros/hero-image_2.jpg" alt="Hero Image RestoMi" class="img-hero">
+      <picture>
+        <source media="(max-width: 425px)" srcset="./images/hero-image_2-small.jpg">
+        <source media="(max-width: 768px)" srcset="./images/hero-image_2-large.jpg">
+        
+        <img src="./images/hero-image_2.jpg" alt="Hero Image RestoMi" class="img-hero lazyload">
+      </picture>
     </div>
 
     <div class="title-section" id="resto-content">
