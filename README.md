@@ -273,7 +273,7 @@ This project is licensed under the ISC License.
 
 **Miftachul Huda**
 
-- Email: putihbiru0505@gmail.com
+- Email: miftachulhd5@gmail.com
 - Instagram: [@miftachulhd](https://www.instagram.com/miftachulhd/)
 
 ## 🙏 Acknowledgments
